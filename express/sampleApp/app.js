@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -44,7 +45,9 @@ if (app.get('env') === 'development') {
             error: err
         });
     });
+    mongoose.connect('mongodb://localhost/local');
 }
+
 
 // production error handler
 // no stacktraces leaked to user
