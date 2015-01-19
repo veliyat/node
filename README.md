@@ -3,6 +3,12 @@ This is a repo made for testing and development purposes for programs that depen
 
 ![The Future Of Web](http://adrianmejia.com/images/lamp_vs_mean.jpg "The Future Of Web")
 
+# Why Node Server?
+
+![Why Node Server?](http://adrianmejia.com/images/threading_java.png "Why Node Server?")
+
+![Why Node Server?](http://adrianmejia.com/images/threading_node.png "Why Node Server?")
+
 ## Node Server Installation for Ubuntu Users
 
 We just have to use the `apt` package manager. 
