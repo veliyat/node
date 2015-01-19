@@ -21,8 +21,8 @@ router.get('/', function (req, res) {
 
   mongoose.model('users').find(function (err, users) {
   	
-  	// res.render('users', { title: 'Users Page',host:config.host,users: users });
-  	res.send(users); // Send all data in default format `json` 
+  	res.render('users', { title: 'Users Page',host:config.host,users: users });
+  	// res.send(users); // Send all data in default format `json` 
 
   });
 });
