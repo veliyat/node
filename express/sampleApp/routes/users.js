@@ -33,9 +33,9 @@ router.get('/all', function (req, res) {
 
 router.get('/asc', function (req, res) {
 
-  var users = mongoose.model('users').find();
-  users.sort('name'); // Sort by name ascending
-  users.exec(function (err, users){
+  var users = mongoose.model('users').find();     // Fetching all rows from table
+  users.sort('name');                             // Sort by name ascending
+  users.exec(function (err, users){               // Execute query
   	res.render('users', { title: 'Users Page',host:config.host,users: users });
   	// res.send(users);
   });
@@ -44,9 +44,9 @@ router.get('/asc', function (req, res) {
 
 router.get('/desc', function (req, res) {
 
-  var users = mongoose.model('users').find();
-  users.sort('-name'); // Sort by name descending
-  users.exec(function (err, users){
+  var users = mongoose.model('users').find();     // Fetching all rows from table
+  users.sort('-name');                            // Sort by name ascending
+  users.exec(function (err, users){               // Execute query
   	res.render('users', { title: 'Users Page',host:config.host,users: users });
   	// res.send(users);
   });
