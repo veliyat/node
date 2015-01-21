@@ -6,4 +6,11 @@ block content
 		p This is users page. Change this text from "
 			b views/users.jade
 			" file.
-		p= users
+		if users
+			=users
+		else
+			a(href="all") All Rows
+			|<br>
+			a(href="asc") Ascending by Name
+			|<br>
+			a(href="desc") Descending by Name
