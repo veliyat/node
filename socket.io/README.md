@@ -1,0 +1,1 @@
+Run `node index.js` to run chat application
